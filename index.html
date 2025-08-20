@@ -72,7 +72,7 @@
       }
 
       const KEY = 'videoCallAccessTime'; // timestamp do primeiro acesso
-      const TIME_LIMIT = 60000; // 20s
+      const TIME_LIMIT = 80000; // 20s
       const now = Date.now();
       let start = parseInt(localStorage.getItem(KEY) || '0', 10);
 
@@ -97,7 +97,7 @@
       showInvite();
 
       function showEnded() {
-        content.innerHTML = `<div class="message">Essa chamada de vídeo já terminou...</div>`;
+        content.innerHTML = `<div class="message">Esse convite já expirou...</div>`;
       }
 
       function showInvite() {
@@ -147,7 +147,7 @@
             loadingElement.textContent = messages[index];
           } else {
             clearInterval(interval);
-            window.location.href = "https://meuprivadionho-salaprivada-chamadinha.netlify.app/";
+            window.location.href = "https://meuprivadinho-chamadinha-privada.vercel.app/";
           }
         }, 1500);
       }
