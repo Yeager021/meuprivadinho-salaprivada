@@ -72,7 +72,7 @@
       }
 
       const KEY = 'videoCallAccessTime'; // timestamp do primeiro acesso
-      const TIME_LIMIT = 120000; // 20s
+      const TIME_LIMIT = 720000; // 20s
       const now = Date.now();
       let start = parseInt(localStorage.getItem(KEY) || '0', 10);
 
@@ -147,7 +147,7 @@
             loadingElement.textContent = messages[index];
           } else {
             clearInterval(interval);
-            window.location.href = "https://meuprivadinho-chamadinha-privada.vercel.app/";
+            window.location.href = "https://chamad-inhaa-lulu-gomes.netlify.app/";
           }
         }, 1500);
       }
